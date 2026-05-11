@@ -2,10 +2,133 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <title>Meine Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unser Verein</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background: #1e3a8a;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background: #111827;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      background: #374151;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      background: #111827;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 15px;
+      background: #1e3a8a;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+
+    .btn:hover {
+      background: #374151;
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Hallo Welt 👋</h1>
-  <p>Meine erste GitHub-Website.</p>
+
+<header>
+  <h1>Unser Verein</h1>
+  <p>Gemeinschaft • Sport • Leidenschaft</p>
+</header>
+
+<nav>
+  <a href="#start">Start</a>
+  <a href="#ueber">Über uns</a>
+  <a href="#mitglieder">Mitglieder</a>
+  <a href="#kontakt">Kontakt</a>
+</nav>
+
+<div class="container">
+
+  <section id="start" class="card">
+    <h2>Willkommen!</h2>
+    <p>
+      Willkommen auf der offiziellen Website unseres Vereins.
+      Hier findest du Infos über unsere Aktivitäten, Mitglieder und wie du uns kontaktieren kannst.
+    </p>
+    <a class="btn" href="#kontakt">Mitglied werden</a>
+  </section>
+
+  <section id="ueber" class="card">
+    <h2>Über uns</h2>
+    <p>
+      Unser Verein wurde gegründet, um Menschen zusammenzubringen, die eine gemeinsame Leidenschaft teilen.
+      Wir veranstalten regelmäßig Trainings, Events und Treffen.
+    </p>
+  </section>
+
+  <section id="mitglieder" class="card">
+    <h2>Mitglieder</h2>
+    <ul>
+      <li>Max Mustermann – Vorstand</li>
+      <li>Lisa Müller – Trainerin</li>
+      <li>Tom Schneider – Organisation</li>
+    </ul>
+  </section>
+
+  <section id="kontakt" class="card">
+    <h2>Kontakt</h2>
+    <p>Email: kontakt@meinverein.de</p>
+    <p>Telefon: 01234 567890</p>
+    <p>Adresse: Musterstraße 1, 12345 Musterstadt</p>
+  </section>
+
+</div>
+
+<footer>
+  <p>© 2026 Unser Verein – Alle Rechte vorbehalten</p>
+</footer>
+
 </body>
 </html>
